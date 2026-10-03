@@ -244,7 +244,7 @@ img{max-width:100%}
       <div style="background:var(--ivory);padding:30px;border:1px solid var(--line-on-ivory)">
         <span class="tag">CAC</span>
         <div class="serif" style="font-size:20px;margin:14px 0 8px">Capacidad Aplicada Actual</div>
-        <div style="font-size:14px;line-height:1.65;color:var(--ink-soft)">Cómo la persona procesa la complejidad en su desempeño presente, en su rol actual.</div>
+        <div style="font-size:14px;line-height:1.65;color:var(--ink-soft)">Cómo la persona gestiona la complejidad en su desempeño presente, en su rol actual.</div>
       </div>
       <div style="background:var(--ivory);padding:30px;border:1px solid var(--line-on-ivory)">
         <span class="tag">CPA</span>
@@ -256,6 +256,79 @@ img{max-width:100%}
         <div class="serif" style="font-size:20px;margin:14px 0 8px">Capacidad Potencial Futura</div>
         <div style="font-size:14px;line-height:1.65;color:var(--ink-soft)">Trayectoria de maduración proyectada — reportada siempre como hipótesis a validar en el tiempo, nunca como una cifra de certeza.</div>
       </div>
+    </div>
+
+    <!-- GRAFICO: ASI SE VE UNA LECTURA -->
+    <div style="margin-top:56px;background:var(--ivory);border:1px solid var(--line-on-ivory);padding:36px 32px 28px">
+      <div class="eyebrow eyebrow-dark">Así se ve una lectura</div>
+      <h3 class="serif" style="font-size:21px;font-weight:500;margin:10px 0 6px">CAC, CPA y CPF sobre la escala de Estratos</h3>
+      <p style="font-size:13.5px;color:var(--ink-soft);margin:0 0 20px;max-width:640px;line-height:1.6">Ejemplo ilustrativo de lectura para un rol que requiere Estrato V — no corresponde a un caso real.</p>
+
+      <div style="overflow-x:auto">
+        <svg viewBox="0 0 1000 230" style="width:100%;height:auto;min-width:640px" role="img" aria-label="Gráfico de ejemplo: el rol requiere Estrato V. CAC se ubica en Estrato IV, CPA coincide con el Estrato V requerido, y CPF proyecta Estrato VI como hipótesis.">
+          <!-- banda: estrato requerido -->
+          <rect x="615" y="34" width="90" height="146" fill="var(--gold)" opacity="0.14"></rect>
+          <text x="660" y="24" text-anchor="middle" font-family="'Work Sans',sans-serif" font-size="12" letter-spacing="0.06em" fill="#9A7B3F" font-weight="500">ESTRATO REQUERIDO POR EL ROL</text>
+
+          <!-- eje base -->
+          <line x1="60" y1="140" x2="960" y2="140" stroke="var(--line-on-ivory)" stroke-width="1.5"></line>
+
+          <!-- ticks + labels de estrato -->
+          <g font-family="'Work Sans',sans-serif" font-size="12" fill="#4A5A68">
+            <g>
+              <line x1="60" y1="134" x2="60" y2="146" stroke="#C9C2B3"></line>
+              <text x="60" y="166" text-anchor="middle" font-weight="500" fill="#16222F">I</text>
+              <text x="60" y="182" text-anchor="middle" font-size="10">Operativo</text>
+            </g>
+            <g>
+              <line x1="210" y1="134" x2="210" y2="146" stroke="#C9C2B3"></line>
+              <text x="210" y="166" text-anchor="middle" font-weight="500" fill="#16222F">II</text>
+              <text x="210" y="182" text-anchor="middle" font-size="10">Supervisión</text>
+            </g>
+            <g>
+              <line x1="360" y1="134" x2="360" y2="146" stroke="#C9C2B3"></line>
+              <text x="360" y="166" text-anchor="middle" font-weight="500" fill="#16222F">III</text>
+              <text x="360" y="182" text-anchor="middle" font-size="10">Gestión</text>
+            </g>
+            <g>
+              <line x1="510" y1="134" x2="510" y2="146" stroke="#C9C2B3"></line>
+              <text x="510" y="166" text-anchor="middle" font-weight="500" fill="#16222F">IV</text>
+              <text x="510" y="182" text-anchor="middle" font-size="10">Dirección</text>
+            </g>
+            <g>
+              <line x1="660" y1="134" x2="660" y2="146" stroke="#C9C2B3"></line>
+              <text x="660" y="166" text-anchor="middle" font-weight="500" fill="#16222F">V</text>
+              <text x="660" y="182" text-anchor="middle" font-size="10">C-Level</text>
+            </g>
+            <g>
+              <line x1="810" y1="134" x2="810" y2="146" stroke="#C9C2B3"></line>
+              <text x="810" y="166" text-anchor="middle" font-weight="500" fill="#16222F">VI</text>
+              <text x="810" y="182" text-anchor="middle" font-size="10">Transf. sectorial</text>
+            </g>
+            <g>
+              <line x1="960" y1="134" x2="960" y2="146" stroke="#C9C2B3"></line>
+              <text x="960" y="166" text-anchor="middle" font-weight="500" fill="#16222F">VII</text>
+              <text x="960" y="182" text-anchor="middle" font-size="10">Visión civ.</text>
+            </g>
+          </g>
+
+          <!-- CAC: Estrato IV -->
+          <line x1="510" y1="140" x2="510" y2="96" stroke="#16222F" stroke-width="1"></line>
+          <circle cx="510" cy="96" r="7" fill="#16222F"></circle>
+          <text x="510" y="78" text-anchor="middle" font-family="'EB Garamond',Georgia,serif" font-size="14" font-weight="600" fill="#16222F">CAC</text>
+
+          <!-- CPA: Estrato V -->
+          <line x1="660" y1="140" x2="660" y2="96" stroke="#16222F" stroke-width="1"></line>
+          <rect x="653" y="89" width="14" height="14" fill="#16222F" transform="rotate(45 660 96)"></rect>
+          <text x="660" y="78" text-anchor="middle" font-family="'EB Garamond',Georgia,serif" font-size="14" font-weight="600" fill="#16222F">CPA</text>
+
+          <!-- CPF: Estrato VI, hipotesis -->
+          <line x1="810" y1="140" x2="810" y2="96" stroke="#B9975B" stroke-width="1" stroke-dasharray="3,3"></line>
+          <circle cx="810" cy="96" r="7" fill="var(--ivory)" stroke="#B9975B" stroke-width="2" stroke-dasharray="2,2"></circle>
+          <text x="810" y="78" text-anchor="middle" font-family="'EB Garamond',Georgia,serif" font-size="14" font-weight="600" fill="#9A7B3F">CPF*</text>
+        </svg>
+      </div>
+      <div style="font-size:12px;color:var(--ink-soft);margin-top:10px;line-height:1.6">* CPF se presenta siempre como hipótesis de maduración a validar en el tiempo, nunca como una cifra de certeza.</div>
     </div>
   </div>
 </div>
@@ -283,7 +356,7 @@ img{max-width:100%}
     </div>
     <div style="padding:36px 32px">
       <div class="serif" style="font-size:15px;color:var(--gold);letter-spacing:.04em">PASO 3</div>
-      <h3 class="serif" style="font-size:22px;font-weight:500;margin:10px 0 14px">Decidí con datos</h3>
+      <h3 class="serif" style="font-size:22px;font-weight:500;margin:10px 0 14px">Decida con datos</h3>
       <p style="font-size:14.5px;line-height:1.65;color:var(--ink-soft);margin:0">Un informe con las tres medidas — CAC, CPA y CPF — presentadas por separado, y un anexo de transparencia metodológica que documenta cómo se llegó a cada lectura.</p>
     </div>
   </div>
@@ -321,8 +394,8 @@ img{max-width:100%}
   <div class="container" style="display:flex;justify-content:space-between;align-items:center;gap:40px" class="row">
     <div style="max-width:560px">
       <div class="eyebrow">Contacto</div>
-      <h2 class="serif" style="font-size:30px;font-weight:500;margin:16px 0 14px;line-height:1.25">Solicitá una demo</h2>
-      <p style="font-size:15px;line-height:1.7;opacity:.78;margin:0;font-weight:300">Coordiná una conversación para ver EPA Index aplicado al rol que estás evaluando.</p>
+      <h2 class="serif" style="font-size:30px;font-weight:500;margin:16px 0 14px;line-height:1.25">Solicite una demo</h2>
+      <p style="font-size:15px;line-height:1.7;opacity:.78;margin:0;font-weight:300">Coordine una conversación para ver EPA Index aplicado al rol que está evaluando.</p>
     </div>
     <div style="display:flex;flex-direction:column;gap:14px;min-width:260px">
       <a href="mailto:maria@elisascott.com" style="font-size:16px;border-bottom:1px solid var(--line-on-navy);padding-bottom:10px">maria@elisascott.com</a>
